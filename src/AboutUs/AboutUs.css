@@ -1,0 +1,123 @@
+div {
+  font-family: "Montserrat", serif;
+  text-align: center;
+}
+
+div span {
+  font-size: 2rem;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  color: cadetblue;
+}
+
+h2, p {
+  font-family: "Montserrat", serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px; 
+  font-family: "MonteCarlo", cursive;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px; /* Уменьшение расстояния между параграфами */
+  
+}
+
+/* Картинка */
+.image {
+  max-width: 35%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 40px;  
+  margin: 40px auto;  
+  /* width: 100%; */
+  text-align: left;   
+}
+
+
+.text {
+  flex: 1;
+  padding-right: 30px; 
+  color: #364d53;
+  max-width: 40%;
+  margin-bottom: 0;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 0; 
+  margin-right: 100px;
+  
+}
+
+/* Изображение */
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Стили для контейнера */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f9; /* Легкий фон для контекста */
+}
+
+/* Стили для заголовка */
+h3 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+  /* font-family: "Montserrat", sans-serif; */
+  font-weight: bold;
+}
+
+/* Стили для кнопки */
+.book-button {
+  background-color: cadetblue; /* Зеленый цвет */
+  color: #364d53;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px; /* Округлые углы */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+/* Эффекты при наведении на кнопку */
+.book-button:hover {
+  background-color: cadetblue; /* Темный оттенок при наведении */
+  transform: scale(1.05); /* Немного увеличиваем кнопку */
+}
+
+/* Эффект фокуса */
+.book-button:focus {
+  outline: none; /* Убираем стандартный фокус */
+  box-shadow: 0 0 10px rgba(0, 189, 115, 0.5); /* Добавляем свечение при фокусе */
+}
+
