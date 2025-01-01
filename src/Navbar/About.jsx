@@ -1,7 +1,12 @@
+import { Accordion } from "../Accordion/Accordion";
+
 function About(){
     return(
         <div>
-           <h1>Unsere Leistungen</h1> 
+        <div>
+            <Accordion />
+         </div>
+           
         </div>
     )
 }

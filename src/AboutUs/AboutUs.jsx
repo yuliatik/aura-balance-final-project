@@ -1,12 +1,14 @@
 import './AboutUs.css';
 import { useState, useEffect } from 'react';
 import image from './image.jpg';
-
+import { useNavigate } from 'react-router-dom';
 
 
 // CountdownTimer-Komponente
 const CountdownTimer = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining(targetDate));
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -55,6 +57,12 @@ const getTimeRemaining = (targetDate) => {
 
 function AboutUs() {
 
+  const navigate = useNavigate();
+
+  const handleBooking = () => {
+    navigate('/about');
+  };
+
   return (
     <div>
 
@@ -80,7 +88,7 @@ function AboutUs() {
 
     <div className="btn-container">
       <h3>Buche jetzt eine Massage mit 20 % Rabatt!</h3>
-      <button className="book-button">Jetzt buchen</button>
+      <button className="book-button" onClick={handleBooking}>Jetzt buchen</button>
     </div>
 
     <div>
