@@ -39,6 +39,14 @@ p {
   border-radius: 8px;
 }
 
+.image-two {
+  /* max-width: 35%; */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 100px;
+}
+
 .container {
   display: flex;
   align-items: center;

@@ -9,7 +9,11 @@ import About from "./Navbar/About";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Pricing from "./Navbar/Pricing";
 import Contact from "./Navbar/Contact";
+import Shop from "./Navbar/Shopping";
 import './Navbar/Navbar.css';
+import CartPage from "./Navbar/CartPage";
+// import CartItem from "./Shop/Cart/CartItem";
+
 
 
 function App() {
@@ -20,6 +24,15 @@ function App() {
     <Link to="/about" className="link">Unsere Leistungen</Link>
     <Link to="/pricing" className="link">Preise</Link>
     <Link to="/contact" className='link'>Kontakt</Link>
+    <Link to="/shop" className='link'>Shop</Link>
+    {/* <Link to="/cart" className='link'><button className="cart" ><img className="cartIcon" src="https://img.icons8.com/?size=100&id=67440&format=png&color=000000"/></button></Link> */}
+  
+    <Link to="/cart" className="link">
+        <button className="cart">
+            <img className="cartIcon" src="https://img.icons8.com/?size=100&id=67440&format=png&color=000000" />
+        </button>
+    </Link>
+
   </nav>
 
  <Routes>
@@ -28,7 +41,10 @@ function App() {
     <Route path="/about" element={<About/>}/>
     <Route path="/contact" element={<Contact/>}/>
     <Route path="pricing" element={<Pricing/>}/>
- </Routes>
+    <Route path="shop" element={<Shop/>}/>
+    {/* <Route path="cart" element={<CartItem />} /> */}
+    <Route path="/cart" element={<CartPage />} />
+</Routes>
  <Footer />
  </div> 
 </Router>  

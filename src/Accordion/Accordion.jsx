@@ -9,7 +9,7 @@ export const Accordion = () => {
             <AccordionItem 
                 key={index} 
                 title={item.title} 
-                item={item.content} 
+                content={item.content} 
                 image={item.image} 
             />
         ))}

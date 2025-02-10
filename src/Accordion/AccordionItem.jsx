@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const AccordionItem = ({ title, content = '', image }) => {
+export const AccordionItem = ({ title, content, image }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIsOpen = () => {
