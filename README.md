@@ -1,10 +1,11 @@
 ** Die Website wurde für die Lernzwecke entwickelt **
+
 Aura-Balanace - Massage Studio
 Willkommen bei **Aura-Balance**, einer modernen und benutzerfreundlichen Webanwendung für ein Massagestudio. 
 Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, um den Nutzern eine nahtlose und interaktive Erfahrung zu bieten. 
 
 1. DEMO:
-   Sie können unter "" die Website finden.
+   Sie können unter "https://aura-balance-yuliatik.netlify.app/" die Website finden.
   
 2. Funktionen:
    - Dienstleistungsbeschreibungen: Detaillierte Beschreibungen der vom Studio angebotenen Dienstleistungen.
@@ -19,5 +20,5 @@ Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, 
    - UI Hooks: Benutzerdefinierte Hooks zur Verwaltung von Zuständen und Interaktionen in der Benutzeroberfläche.
    - CSS-Module: Abgeschlossene CSS-Styles, um Konflikte zwischen Komponenten zu vermeiden.
    - React Router: Zur Navigation und Verwaltung verschiedener Seiten/Ansichten in der Anwendung.
-   - 
+
 4.  Lizenz:  Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details.
