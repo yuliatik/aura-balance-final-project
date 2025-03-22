@@ -1,12 +1,13 @@
+import { getCartItems } from "../redux/cartSlice";
 import Cart from "../Shop/Cart/Cart";
 import CartItem from "../Shop/Cart/CartItem";
 
 
 
-function CartPage(){
+function CartPage({cartItem}){
     return(
         <div>   
-           <CartItem />
+           <CartItem cartItem = {cartItem} />
         </div>
        
     )

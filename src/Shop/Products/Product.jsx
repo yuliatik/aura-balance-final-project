@@ -6,6 +6,8 @@ import { useState } from "react";
 const Product =({product}) => {
     const [quantity, setQuantity] = useState(1);
     const dispatch = useDispatch();
+
+    console.log(quantity)
     
     return(
         <div className="product-card">

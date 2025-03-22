@@ -1,28 +1,25 @@
-.block{
-    /* display: flex; */
+  .block{
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(205, 179, 124, 0.03);
-    gap: 50px;
-
-    }.active {
-    padding: 20px 30px;
+    padding: 20px; 
+    }
+    
+    .active {
+    padding: 25px;
     border: 2px solid #364d53;
     cursor: pointer;  
     text-align: center; 
     letter-spacing: 1px; 
     font-family: "Montserrat", serif;
     transition: 0.4s;
+    width: 900px;;
     }
     
     .default {
-    padding: 10px 30px;
     border: 2px solid black;
     letter-spacing: 1px; 
-
-    /* padding: 25px; */
+    padding: 25px;
     border: 1px solid #7D7C7C;;
     cursor: pointer;
     text-align: center;
@@ -31,40 +28,164 @@
     color: #7D7C7C;    
     font-style: italic;
     transition: 0.4s;
+    width:900px;
     }
 
     .content-one{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap
-    }
-    
-    .content {
-    padding: 50px 30px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    /* color: #7D7C7C; */
-    line-height: 30px;
-    width: 360px;
-    /* padding: 10px; */
-    }
-
-   
-
-    .image-two{
-        width: 400px;
-        height: 300px;
-        margin-top: 40px;
-    }
-
-    /* .list {
-        list-style-type: disc;
-        margin: 10px;
-        padding: 0;
-      }
-      .list-item {
-        margin-bottom: 5px;
-      } */
+      display: flex;
+      justify-content:center;
+      align-items: center; 
+      flex-wrap: wrap; 
+      } 
       
+    .image {
+      width: 350px;
+      height: 300px;
+      margin-left: 0; 
+      margin-right: 60px; 
+    }
+   
+   .image-two{
+      width: 350px;
+      height: 300px;
+      margin-top: 35px;
+      margin-left:0px;
+    }  
+   
+    .list {
+      list-style-type: disc; 
+      padding-left: 0px; 
+      display: flex;
+      flex-direction: column;
+      list-style-type: none; 
+       } 
+      
+    .list-item {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      margin-top: 10px;
+      width:450px;
+      text-align: left;  
+      }
 
-  
+      .list-item::before {
+        content: "✔";  
+        font-size: 20px; 
+        color: #5B913B;
+        margin-right: 30px; 
+      }
+       
+
+    @media screen and (max-width: 768px) {
+
+        body {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden; 
+        }
+
+        .block {
+          padding: 10px;         
+        }
+      
+        .active,
+        .default {
+          width: 400px; 
+          font-size: 15px; 
+        }      
+      
+        .image {
+          width: 100%; 
+          height: auto; 
+          margin-left: 0; 
+          margin-right: 10;         
+        }
+      
+        .image-two {
+          width: 100%;
+          height: auto;
+          margin-top: 15px;
+          margin-right: 10;
+        }
+
+        .content-one{
+          display:flex;
+          flex-direction: column;
+        }
+              
+        .content {
+          max-width: 100%; 
+          padding: 10px;
+          font-size: 14px; 
+        }
+      
+        .list-item {
+          width: 350px; 
+          margin-left:20px;
+          font-size:15px;
+        }
+      
+        .list-item::before {
+          font-size: 16px; 
+          margin-right: 10px; 
+        }
+      }
+      
+  @media screen and (max-width: 480px) {
+
+        body {
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden; 
+        }
+
+        .block {
+          padding: 10px;         
+        }
+      
+        .active,
+        .default {
+          width: 100%;
+          font-size: 16px;
+         
+        }
+      
+        .image {
+          display:flex;
+          justify-content: center;
+          max-width: 100%;
+          height: auto;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+       .image-two {       
+          width: 100%;
+          height: auto;
+          margin-top: 10px;
+        } 
+      
+        .content {
+          max-width: 100%;
+          padding: 8px;
+          font-size: 12px;
+        }
+
+            
+        .list-item {
+          width:350px;
+          font-size: 14px;
+          margin:20px;
+        }
+      
+        .list-item::before {
+          font-size: 12px;
+          margin-right: 8px;
+        }
+      }
+       
+
+       
+       
+   
+    

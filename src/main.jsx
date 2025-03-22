@@ -6,6 +6,9 @@ import React from 'react';
 import './index.css';
 import { store } from './redux/store.jsx';
 import { Provider } from 'react-redux';
+import 'font-awesome/css/font-awesome.min.css'; 
+
+
 
 
 createRoot(document.getElementById('root')).render(   

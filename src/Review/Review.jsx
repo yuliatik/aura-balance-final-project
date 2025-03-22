@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import './Review.css';
 import { data } from './data.jsx';
-// import { gsap } from 'gsap';
 
 
 function Reviews (){

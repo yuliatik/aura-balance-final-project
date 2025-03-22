@@ -27,36 +27,38 @@ h3 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; /* Уменьшение расстояния между параграфами */
-  
+  margin-bottom: 20px;   
 }
 
-/* Картинка */
-.image {
-  max-width: 35%;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.image-two {
-  /* max-width: 35%; */
-  width: 100%;
-  height: auto;
+.image, .image-two {
+  object-fit: cover;  
   border-radius: 8px;
   margin-left: 100px;
+  max-width: 450px; 
+  height: 350px;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 0; 
+  margin-right: 100px;  
+ }
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
 }
 
 .container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   padding: 40px;  
-  margin: 40px auto;  
-  /* width: 100%; */
+  margin: 40px auto;
   text-align: left;   
 }
-
 
 .text {
   flex: 1;
@@ -68,23 +70,6 @@ p {
   width: 400px;
 }
 
-.image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  margin-top: 0; 
-  margin-right: 100px;
-  
-}
-
-/* Изображение */
-.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-/* Стили для контейнера */
 .btn-container {
   display: flex;
   flex-direction: column;
@@ -92,40 +77,130 @@ p {
   justify-content: center;
   padding: 50px;
   text-align: center;
-  background-color: #f4f4f9; /* Легкий фон для контекста */
+  background-color: #f4f4f9; 
 }
 
-/* Стили для заголовка */
 h3 {
   font-size: 30px;
   color: #333;
   margin-bottom: 20px;
-  /* font-family: "Montserrat", sans-serif; */
   font-weight: bold;
 }
 
-/* Стили для кнопки */
 .book-button {
-  background-color: cadetblue; /* Зеленый цвет */
+  background-color: cadetblue; 
   color: #364d53;
   font-size: 18px;
   font-weight: bold;
   padding: 12px 30px;
   border: none;
-  border-radius: 50px; /* Округлые углы */
+  border-radius: 10%; 
   cursor: pointer;
-  transition: all 0.3s ease; /* Плавный переход для эффектов */
+  transition: all 0.3s ease; 
 }
 
-/* Эффекты при наведении на кнопку */
 .book-button:hover {
-  background-color: cadetblue; /* Темный оттенок при наведении */
-  transform: scale(1.05); /* Немного увеличиваем кнопку */
+  background-color: cadetblue; 
+  transform: scale(1.05); 
 }
 
-/* Эффект фокуса */
 .book-button:focus {
-  outline: none; /* Убираем стандартный фокус */
-  box-shadow: 0 0 10px rgba(0, 189, 115, 0.5); /* Добавляем свечение при фокусе */
+  outline: none; 
+  box-shadow: 0 0 10px rgba(0, 189, 115, 0.5); 
 }
 
+@media (max-width: 768px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .container {
+    padding: 10px; 
+  }
+
+  .text {
+    font-size: 20px;
+    max-width: 100%; 
+    text-align: center; 
+    padding: 0 15px;
+  }
+
+  .book-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .image, .image-two {
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto;
+    display: block; 
+    
+  }
+
+  .image img, .image-two img {
+    height: auto;
+    display: block; 
+    border-radius: 8px;
+  }
+
+  }
+
+@media (max-width: 480px) {
+
+  .container{
+    display: flex; 
+     flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding: 0;
+  }
+  
+  h3 {
+    font-size: 100px;
+  }
+
+  .image, .image-two {
+    max-height: 100px;
+    margin: 0 auto;  
+    max-width: 500px; 
+    height: auto;
+    display: block; 
+   }
+
+
+  .btn-container {
+    margin-top: 15px;
+  }
+
+  .book-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  .countdown {
+    font-size: 1.2rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+    padding: 0 50px; 
+    max-width:100%;
+    text-align: center;
+  }
+   
+}

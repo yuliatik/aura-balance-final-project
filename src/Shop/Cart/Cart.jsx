@@ -1,21 +1,50 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import CartItem from "./CartItem";
-import { getCartItems, getTotalPrice } from "../../redux/cartSlice";
+import './Cart.css';
+import { getCartItems, getTotalPrice, updateQuantity } from "../../redux/cartSlice";
 
 const Cart = () => {
-
+    const dispatch = useDispatch();
     const cartItems = useSelector(getCartItems);
     const totalPrice = useSelector(getTotalPrice);
 
-    return(
+    const handleQuantityChange = (id, newQuantity) => {
+        dispatch(updateQuantity({ cartItemId: id, newQuantity }));
+    };
+
+    return (
         <div className="cart-container">
-            <button className="cart" ><img className="cartIcon" src="https://img.icons8.com/?size=100&id=67440&format=png&color=000000"/></button> 
-            {cartItems.map(cartItem => <CartItem key={cartItem.id} cartItem={cartItem} />)}
-            <p>Total: {totalPrice} €</p>
-                    
+            <h1>Warenkorb</h1>
+            <img 
+                className="category-image" 
+               src={'https://img.freepik.com/premium-photo/cosmetic-bottle-containers-packaging-with-winter-seasonal-theme_175175-18.jpg?w=1060'}
+               alt="accounting"
+            />
+            
+            {cartItems.length === 0 ? (
+                <h2>Ihr Warenkorb ist leer</h2>  
+            ) : (
+                <>
+                    <div>
+                        <h2>Gesamtpreis: {totalPrice} €</h2>
+                        <button className="checkout-button">Zur Kasse gehen</button>
+                    </div>
+
+                    {cartItems.map(cartItem => (
+                        <CartItem
+                            key={cartItem.id}
+                            cartItem={cartItem}
+                            onQuantityChange={handleQuantityChange}
+                        />
+                    ))}
+                </>
+            )}
         </div>
-    )
-}
+    );
+};
 
 export default Cart;
+
+
+
 

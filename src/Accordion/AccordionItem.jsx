@@ -21,8 +21,6 @@ export const AccordionItem = ({ title, content, image }) => {
           </div>
 
           <div > 
-            {/* {content} */}
-
             {content && (
               <ul className="list">
                 {content.split(";").map((item, index) => (
@@ -40,6 +38,10 @@ export const AccordionItem = ({ title, content, image }) => {
      </div>
    );
 }; 
+
+
+
+
 
 
 

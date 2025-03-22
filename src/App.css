@@ -1,3 +1,52 @@
 body{
     background-color: #F3ECE4;
 }
+
+.logotwo{
+    width: 50px;  
+    margin: 0 20px; 
+}
+
+.heading{
+    color:#0D4715;
+}
+
+.hamburger {
+  display: none; 
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+  
+  .nav-links.open .left-links, .nav-links.open .right-links {
+    display: flex; 
+    text-align: center;
+  }
+
+.hamburger {
+  display: none; 
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links, .right-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  margin: 0 15px;
+}
+
+
+ 
