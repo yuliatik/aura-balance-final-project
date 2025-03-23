@@ -25,7 +25,7 @@ const Cart = () => {
                 <h2>Ihr Warenkorb ist leer</h2>  
             ) : (
                 <>
-                    <div>
+                    <div className="price">
                         <h2>Gesamtpreis: {totalPrice} €</h2>
                         <button className="checkout-button">Zur Kasse gehen</button>
                     </div>
