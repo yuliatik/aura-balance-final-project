@@ -61,6 +61,13 @@
         width: 20px;  
         height: 20px;
     }
+
+    .price{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+                
+    }
 }
 
 
