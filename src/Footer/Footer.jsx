@@ -8,18 +8,6 @@ const Footer = () => {
 
   const navigate = useNavigate(); 
 
-  const handleNavigateToAbout = () => {
-    navigate('/about');
-  }
-
-  const handleNavigateToServices = () => {
-    navigate('/shop'); 
-  };
-
-  const handleNavigateToContact = () => {
-    navigate('/contact'); 
-  };
-
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -48,9 +36,9 @@ const Footer = () => {
         <p>© 2024 Aura Balance. Alle Rechte vorbehalten.</p>
         <p>Entwickelt von yuliatik für die Lernzwecke.</p>
         <ul className="footer-links">
-          <li><a href="#" onClick={handleNavigateToAbout}>Home</a></li>
-          <li><a href="#" onClick={handleNavigateToServices}>Shop</a></li>
-          <li><a href="#" onClick={handleNavigateToContact}>Kontakt</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/shop">Shop</Link></li>
+          <li><Link to="/contact">Kontakt</Link></li>
         </ul>
       </div>
     </footer>
