@@ -1,8 +1,24 @@
-# React + Vite
+** Die Website wurde für die Lernzwecke entwickelt **
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aura-Balanace - Massage Studio
+Willkommen bei **Aura-Balance**, einer modernen und benutzerfreundlichen Webanwendung für ein Massagestudio. 
+Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, um den Nutzern eine nahtlose und interaktive Erfahrung zu bieten. 
 
-Currently, two official plugins are available:
+1. DEMO:
+   Sie können unter "https://aura-balance-yuliatik.netlify.app/" die Website finden.
+  
+2. Funktionen:
+   - Dienstleistungsbeschreibungen: Detaillierte Beschreibungen der vom Studio angebotenen Dienstleistungen.
+   - Benutzer können über die Massagestudio die Information sammeln und passende Massage aussuchen.
+   - Die Website bietet auch Online-Shop, wo die Kunden auch die Produkte für den Körper finden können.
+   - Das Warenkorb System ermöglicht es den Benutzern, Produkte in ihrem virtuellen Warenkorb zu sammeln.
+     Benutzer können die Anzahl der Artikel anpassen, Produkte entfernen und den Gesamtpreis der Bestellung jederzeit einsehen. S
+   - Die Anwendung ist mobilfreundlich und sieht auf allen Bildschirmgrößen gut aus.
+     
+3. Verwendete Technologien:
+   - React: Eine JavaScript-Bibliothek zum Erstellen von Benutzeroberflächen.
+   - UI Hooks: Benutzerdefinierte Hooks zur Verwaltung von Zuständen und Interaktionen in der Benutzeroberfläche.
+   - CSS-Module: Abgeschlossene CSS-Styles, um Konflikte zwischen Komponenten zu vermeiden.
+   - React Router: Zur Navigation und Verwaltung verschiedener Seiten/Ansichten in der Anwendung.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4.  Lizenz:  Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details.
