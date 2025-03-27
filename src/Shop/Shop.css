@@ -355,7 +355,7 @@
   
 }
 
-  @media (max-width: 480px) {
+  @media (max-width: 360px) {
     .filter-container {
       padding-left: 10px;  
       padding-right: 10px; 
@@ -373,7 +373,11 @@
 
     .cartIcon{
       width:30px;
-    }  
+    } 
+    
+    .checkout-button{
+      width:100%;
+    }
 
   }
 

@@ -37,8 +37,7 @@
       align-items: center; 
       flex-wrap: wrap; 
       width:100%;
-      margin-right:90px;
-      } 
+     } 
       
     .image {
       width: 350px;
@@ -92,39 +91,39 @@
       
         .active,
         .default {
-          width: 400px; 
+          width: 100%; 
           font-size: 15px; 
         }      
       
         .image {
-          width: 100%; 
+          width: 100%;
           height: auto; 
-          margin-left: 0; 
-          margin-right: 10;         
-        }
+       }
       
         .image-two {
           width: 100%;
           height: auto;
           margin-top: 15px;
-          margin-right: 10;
         }
 
         .content-one{
           display:flex;
           flex-direction: column;
+          justify-content: center;
+          align-items: center;
+                 
         }
               
         .content {
           max-width: 100%; 
           padding: 10px;
           font-size: 14px; 
-        }
+          }
       
         .list-item {
-          width: 350px; 
-          margin-left:20px;
-          font-size:15px;
+          width: 100%;  
+          height:auto;
+          font-size: 15px;
         }
       
         .list-item::before {
@@ -133,13 +132,13 @@
         }
       }
       
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 360px) {
 
-        body {
-          margin: 0;
-          padding: 0;
-          overflow-x: hidden; 
-        }
+        body { 
+         margin: 0;
+          padding: 0; 
+          overflow-x: hidden;  
+         } 
 
         .block {
           padding: 10px;         
@@ -153,37 +152,31 @@
         }
       
         .image {
-          display:flex;
-          justify-content: center;
           max-width: 100%;
-          height: auto;
-          margin-left: 0;
-          margin-right: 0;
+          height: auto; 
+          display: block; 
+        margin: 0 auto;
         }
       
-       .image-two {       
+        .image-two {       
           width: 100%;
           height: auto;
           margin-top: 10px;
-        } 
-      
-        .content {
-          max-width: 100%;
-          padding: 8px;
-          font-size: 12px;
-        }
+        }  
 
-            
-        .list-item {
-          width:350px;
-          font-size: 14px;
-          margin:20px;
-        }
-      
-        .list-item::before {
+          
+         .content {
+          max-width: 100%;
+          padding: 10px;
           font-size: 12px;
-          margin-right: 8px;
+        }  
+    
+        .list-item {
+          width:100%;
+          font-size: 14px;
         }
+       
+   
       }
        
 

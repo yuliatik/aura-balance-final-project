@@ -66,9 +66,16 @@
         display: flex;
         flex-direction: column;
         align-content: center;
+       
                 
     }
    
+}
+
+@media (max-width: 360px){
+    checkout-button{
+        width:100%;
+    }
 }
 
 
