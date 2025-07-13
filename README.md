@@ -5,7 +5,7 @@ Willkommen bei **Aura-Balance**, einer modernen und benutzerfreundlichen Webanwe
 Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, um den Nutzern eine nahtlose und interaktive Erfahrung zu bieten. 
 
 1. DEMO:
-   Sie können unter "https://aura-balance-yuliatik.netlify.app/" die Website finden.
+   Sie können unter  die Website finden.
   
 2. Funktionen:
    - Dienstleistungsbeschreibungen: Detaillierte Beschreibungen der vom Studio angebotenen Dienstleistungen.
