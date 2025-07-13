@@ -3,6 +3,7 @@ import './Shop.css';
 import AllCategories from './Filter/AllCategories';
 import Products from './Products/Products';
 import { useNavigate } from 'react-router-dom';
+import ProductDetailsPage from './Products/ProductDetailsPage';
 
 
 function Shop() {
@@ -26,6 +27,9 @@ function Shop() {
            </button>
             <Products selectedCategory={selectedCategory} />
         </div>
+
+
+
     );
 }
 

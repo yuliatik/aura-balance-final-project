@@ -111,7 +111,7 @@ export const dataProducts = [
   
     {
       id:13,
-      name: "Lebenskraft Borste",
+      name: "Lebenskraft Bürste",
       category: "Trockenmassagebürstes",
       price: 25,
       description:"",

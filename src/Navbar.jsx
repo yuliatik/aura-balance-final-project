@@ -8,6 +8,8 @@ import MainPage from './pages/MainPage';
 import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shopping';
+import ProductDetailsPage from './Shop/Products/ProductDetailsPage';
+
 
 
 function Navbar () {
@@ -50,6 +52,7 @@ function Navbar () {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/shop" element={<Shop />} />
                     <Route path="/cart" element={<Cart />} />
+                    <Route path="/product/:id" element={<ProductDetailsPage />} />
                 </Routes>
 
                 <Footer />

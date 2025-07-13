@@ -8,7 +8,6 @@
 }
 
 .product-card {
-  border: 2px solid #f1f1f1;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,32 +29,41 @@
 }
 
 .product-card .picture {
+  height: 200px;
+  width: 100%;           
+  padding: 10px 10px 5px 10px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 200px;
-  box-sizing: border-box;
-  border-bottom: 2px solid #f1f1f1;
-  padding: 15px;
   background-color: #f9f9f9;
+  border-bottom: 2px solid #f1f1f1;
 }
 
 .product-card .picture img {
+  max-height: 100%;       
+  max-width: 100%;        
+  object-fit: contain;   
+  display: block;
+}
+
+.product-card .picture a img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
 }
+
+
+.product-info h3 {
+  font-size:30px;
+  margin: 5px 0 0 0; 
+}
+
 
 .product-info {
   padding: 15px;
   text-align: center;
   flex-grow: 1;
-}
-
-.product-info h3 {
-  font-size: 1.1em;
-  margin: 10px 0;
 }
 
 .product-info p {
@@ -96,6 +104,20 @@
   margin-right: auto;
 }
 
+.product-card .picture a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.full-description {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+} 
+
+
 .filter-container {
   display: flex;
   justify-content: center;
@@ -131,6 +153,36 @@
   background-color: #1F7D53;
   color: white;
 }
+
+
+.back-button {
+  background-color: cadetblue;
+  color: white;
+  padding: 10px 20px;
+  margin-top:20px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #1f7d53;
+}
+
+.product-details-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-details-container .product-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 
 /* CART */
 
@@ -329,6 +381,7 @@
   background-color: #1f7d53;
   color: white;
 }
+
 
 @media (max-width: 768px) {
   .filter-container {
