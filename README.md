@@ -5,9 +5,10 @@ Willkommen bei **Aura-Balance**, einer modernen und benutzerfreundlichen Webanwe
 Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, um den Nutzern eine nahtlose und interaktive Erfahrung zu bieten. 
 
 1. DEMO:
-   Sie können unter  die Website finden.
+   Sie können unter  die Website https://aura-balance-massage-studio.netlify.app/ finden.
+   ![App Screenshot](src/balance.png)
   
-2. Funktionen:
+3. Funktionen:
    - Dienstleistungsbeschreibungen: Detaillierte Beschreibungen der vom Studio angebotenen Dienstleistungen.
    - Benutzer können über die Massagestudio die Information sammeln und passende Massage aussuchen.
    - Die Website bietet auch Online-Shop, wo die Kunden auch die Produkte für den Körper finden können.
@@ -15,10 +16,10 @@ Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, 
      Benutzer können die Anzahl der Artikel anpassen, Produkte entfernen und den Gesamtpreis der Bestellung jederzeit einsehen. S
    - Die Anwendung ist mobilfreundlich und sieht auf allen Bildschirmgrößen gut aus.
      
-3. Verwendete Technologien:
+4. Verwendete Technologien:
    - React: Eine JavaScript-Bibliothek zum Erstellen von Benutzeroberflächen.
    - UI Hooks: Benutzerdefinierte Hooks zur Verwaltung von Zuständen und Interaktionen in der Benutzeroberfläche.
    - CSS-Module: Abgeschlossene CSS-Styles, um Konflikte zwischen Komponenten zu vermeiden.
    - React Router: Zur Navigation und Verwaltung verschiedener Seiten/Ansichten in der Anwendung.
 
-4.  Lizenz:  Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details.
+5.  Lizenz:  Dieses Projekt ist unter der MIT-Lizenz lizenziert – siehe die [LICENSE](LICENSE)-Datei für Details.
