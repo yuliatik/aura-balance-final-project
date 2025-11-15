@@ -2,7 +2,7 @@
 
 Aura-Balanace - Massage Studio
 
- ![App Screenshot](src/balance.png)
+ ![App Screenshot](src/balanceTwo.png)
  
 Willkommen bei **Aura-Balance**, einer modernen und benutzerfreundlichen Webanwendung für ein Massagestudio. 
 Die Anwendung wurde mit **React** entwickelt und nutzt verschiedene Funktionen, um den Nutzern eine nahtlose und interaktive Erfahrung zu bieten. 
