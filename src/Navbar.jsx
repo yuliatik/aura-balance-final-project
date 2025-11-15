@@ -11,7 +11,6 @@ import Shop from './pages/Shopping';
 import ProductDetailsPage from './Shop/Products/ProductDetailsPage';
 
 
-
 function Navbar () {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -33,9 +32,9 @@ function Navbar () {
                             <Link to="/about" className="link">Unsere Leistungen</Link>
                         </div>
 
-                        <div className="heading">
-                            <h2>Aura-Balance</h2>
-                        </div>
+                <div className="heading">
+                <Link to="/" className="link"><h2>Aura-Balance</h2></Link>
+                </div>
 
                         <div className="right-links">
                             <Link to="/contact" className="link">Kontakt</Link>

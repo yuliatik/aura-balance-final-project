@@ -11,10 +11,10 @@ export const dataProducts = [
   
     {
       id:2,
-      name: "HydroBalance ",
+      name: "Hydra Balance ",
       category: "Körpercreme",
       price: 75,
-      description:"HydraBalance Körpercreme spendet intensiv Feuchtigkeit, schützt die Haut und sorgt für ein weiches, geschmeidiges Hautgefühl – die perfekte Pflege für jeden Tag",
+      description:"Hydra Balance Körpercreme spendet intensiv Feuchtigkeit, schützt die Haut und sorgt für ein weiches, geschmeidiges Hautgefühl – die perfekte Pflege für jeden Tag",
       image: "https://img.freepik.com/free-photo/high-angle-natural-cream-concept_23-2148578665.jpg?t=st=1736887964~exp=1736891564~hmac=a0e9ee943b002834fd68f0a51f6dc26544a9817f927ff54527b7875daa48d508&w=740"
     },
   

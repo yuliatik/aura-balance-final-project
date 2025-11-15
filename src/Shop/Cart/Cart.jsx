@@ -13,13 +13,13 @@ const Cart = () => {
     };
 
     return (
-        <div className="cart-container">
-            <h1>Warenkorb</h1>
-            <img 
-                className="category-image" 
+        <div>
+            <img className="category-image" 
                src={'https://img.freepik.com/premium-photo/cosmetic-bottle-containers-packaging-with-winter-seasonal-theme_175175-18.jpg?w=1060'}
                alt="accounting"
             />
+
+            <h2>Warenkorb</h2>
             
             {cartItems.length === 0 ? (
                 <h2>Ihr Warenkorb ist leer</h2>  

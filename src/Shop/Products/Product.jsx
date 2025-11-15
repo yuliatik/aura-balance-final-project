@@ -20,7 +20,7 @@ const Product =({product}) => {
       </div>   
 
             <div className="product-info">                      
-            <h3>{product.name}</h3>
+            <h4>{product.name}</h4>
             <p>{product.price} €</p> 
              <ChangeQuantity quantity={quantity} setQuantity = {setQuantity} />
             <button className="product-button" onClick={() => dispatch(addItemToCart({product, quantity}))}>In den Warenkorb</button>

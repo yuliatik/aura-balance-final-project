@@ -13,6 +13,27 @@ div span {
   color: cadetblue;
 }
 
+
+.header{
+  font-size: 30px;
+  text-align: center;
+  font-family: "MonteCarlo", cursive;
+  color: #364d53;
+  margin-top: 100px;
+}
+
+.picture {
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin-top: 70px;
+}
+
+.picture img {
+  border-radius: 5px;
+   }
+
+
 h2, p {
   font-family: "Montserrat", serif;
 }
@@ -21,22 +42,19 @@ h3 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 8px; 
-  font-family: "MonteCarlo", cursive;
+  font-family: "Montserrat", serif;
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;   
 }
 
-.image, .image-two {
-  object-fit: cover;  
-  border-radius: 8px;
-  margin-left: 100px;
-  max-width: 450px; 
-  height: 350px;
-}
+ .image, .image-two {
+  max-width: 650px; 
+  
+} 
 
 .image {
   flex: 1;
@@ -47,9 +65,8 @@ p {
  }
 
 .image img {
-  max-width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .container {
@@ -64,10 +81,16 @@ p {
   flex: 1;
   padding-right: 30px; 
   color: #364d53;
-  max-width: 40%;
+  max-width: 100vh;
   margin-bottom: 0;
   margin: 0 auto;
-  width: 400px;
+  max-width: 600px;
+ text-align: left;
+}
+
+.text p {
+  line-height: 1.6;           
+  margin-bottom: 0;
 }
 
 .btn-container {
@@ -87,16 +110,21 @@ h3 {
   font-weight: bold;
 }
 
+.size{
+  font-size: 25px;
+}
+
 .book-button {
   background-color: cadetblue; 
-  color: #364d53;
+  color:white;
   font-size: 18px;
   font-weight: bold;
   padding: 12px 30px;
   border: none;
-  border-radius: 10%; 
+  border-radius: 10px; 
   cursor: pointer;
   transition: all 0.3s ease; 
+  width: 300px;
 }
 
 .book-button:hover {
@@ -108,6 +136,100 @@ h3 {
   outline: none; 
   box-shadow: 0 0 10px rgba(0, 189, 115, 0.5); 
 }
+
+/* Was für uns wichtig */
+
+.important-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #faf7f5;
+}
+
+.important-section h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: #3d3d3d;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.important-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  border-left: 1px solid #ddd;
+}
+
+.column:first-child {
+  border-left: none;
+}
+
+.column h4 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.column p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.shop-block {
+  background-color: #fdf6f2; 
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.shop-text h3 {
+  font-size: 28px;
+  color: #364d53;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", serif;
+}
+
+.shop-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 30px;
+  font-family: "Montserrat", serif;
+}
+
+.shop-text .book-button {
+  background-color: cadetblue; 
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.shop-text .book-button:hover {
+  background-color: #468d8f; 
+  transform: scale(1.05);
+} 
+
 
 @media (max-width: 768px) {
 
@@ -153,6 +275,30 @@ h3 {
     border-radius: 8px;
   }
 
+  /* Was für uns wichtig */
+   .important-columns {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .column {
+    border-left: none;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  .column:first-child {
+    border-top: none;
+  }
+
+  .picture {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .picture img {
+    width: 70%;  
+    margin: 0 auto;
+  }
+
   }
 
 @media (max-width: 360px) {
@@ -166,7 +312,6 @@ h3 {
   }
 
   .image {
-    /* max-height: 100px; */
     margin: 0 auto;  
     max-width: 100%; 
     height: auto;

@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './Review.css';
 import { data } from './data.jsx';
@@ -41,7 +40,7 @@ function Reviews (){
       
       <div className='id'>{text}</div>
       <div className='id'>{name}</div>
-
+     
     
 <div className="button-container">
     <button className="arrow-btn" onClick={previousPerson}>&#8592; 

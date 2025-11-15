@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Slideshow.css'; 
+import slideOne from './slideOne.jpeg';
 import slideTwo from './slideTwo.jpg';
 import slideThree from './slideThree.jpg';
 import slideFour from './slideFour.jpg';
 
-const images = [slideTwo, slideThree, slideFour];
+const images = [slideOne, slideTwo, slideThree, slideFour];
 
 const Slideshow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,7 +13,7 @@ const Slideshow = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); 
-    }, 3000);
+    }, 4000);
 
     
     return () => clearInterval(intervalId);
@@ -26,10 +27,6 @@ const Slideshow = () => {
     <div className="slideshow">
       <div className="slide" style={{ backgroundImage: `url(${images[currentIndex]})` }}>
         
-      </div>
-
-      <div>
-        <h1>Hezlich Willkomen im Schönheits-und Gesundheitsstudio!</h1>
       </div>
 
       <div className="indicators">

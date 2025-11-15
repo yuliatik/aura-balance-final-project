@@ -17,11 +17,20 @@
   justify-content: flex-end;
 }
 
+.heading{
+  text-decoration: none;
+}
+
+
 .link {
   text-decoration: none;
-  color: black;
+  color: #364d53;
   padding: 10px;
   margin: 0 10px;  
+}
+
+.link:hover {
+  text-decoration: none;
 }
 
 .hamburger {
@@ -55,6 +64,7 @@
   .link {
     padding: 10px;
     color: white;
+    text-decoration: none;
   }
 
   .left-links, .right-links {
@@ -64,5 +74,6 @@
 
   .heading {
     display:none;
+    text-decoration: none;
   }
 }

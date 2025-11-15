@@ -108,7 +108,7 @@
 @media (max-width: 768px) {
 
   html, body {
-    overflow-x: hidden;  /* Отключаем горизонтальный скролл */
+    overflow-x: hidden;  
     width: 100%;
     margin: 0;
     padding: 0;
